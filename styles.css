@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    position: relative; 
+}
+
+header {
+    background-color: #309f6b;
+    color: rgba(255, 255, 255, 0.978);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.clinic-name {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.963);
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav button:hover {
+    color: #7ff3c3;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: none;
+    flex: 1; 
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.img-box {
+    text-align: left;
+    padding: 190px;
+    border-radius: 8px;
+    background-image: url('./assets/img.png');
+    opacity: 0.8;
+    max-width: 100%;
+}
+
+.img-box h2 {
+    margin-left: -80px;
+    font-size: 25px;
+    color: #091e0a;
+}
+
+.img-box p {
+    font-size: 19px;
+    margin-left: -80px;
+    color: #091e0a;
+}
+
+.img-box img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #3abc80;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #309f6b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #c62828;
+}
+
+#cadastroMsg,
+#marcacaoMsg,
+#cancelamentoMsg {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.header-content nav {
+    margin-top: 10px;
+}
+
+.cancelar-btn {
+    background-color: #309f6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cancelar-btn:hover {
+    background-color: #c62828;
+}
+footer {
+    background-color: #309f6b;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: flex;
+    bottom: 0;
+    margin-top: 10px;
+   
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .img-box {
+        padding: 100px 20px;
+    }
+
+    .form-row {
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        padding: 8px 15px;
+    }
+}
