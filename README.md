@@ -1,6 +1,5 @@
 # Clínica de Consultas
 
-
 ### 📝Funcionalidades do Projeto
 
 #### Cadastrar Pacientes:
